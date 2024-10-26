@@ -3,9 +3,9 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
 // Load Composer's autoloader or PHPMailer directly
-require 'C:/xampp/htdocs/unimax/PHPMailer-master/src/Exception.php';
-require 'C:/xampp/htdocs/unimax/PHPMailer-master/src/PHPMailer.php';
-require 'C:/xampp/htdocs/unimax/PHPMailer-master/src/SMTP.php';
+require 'Exception.php';
+require 'PHPMailer.php';
+require 'SMTP.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = htmlspecialchars(trim($_POST["name"]));
